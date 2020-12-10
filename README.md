@@ -33,7 +33,7 @@ git pull https://github.com/ThomLlobEce/BigDataEcosystemProject.git
 
 To know where you can run your notebook, you can execute the following command : 
 
-```
+```console
 jupyter notebook list
 ```
 
