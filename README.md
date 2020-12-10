@@ -27,6 +27,7 @@ You are now in the bash of your jupyter/pyspark-notebook. You will need then to 
 ```console
 mkdir project/
 cd project/
+git init
 git pull https://github.com/ThomLlobEce/BigDataEcosystemProject.git
 ```
 
