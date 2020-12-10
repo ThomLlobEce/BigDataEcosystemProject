@@ -31,4 +31,15 @@ git init
 git pull https://github.com/ThomLlobEce/BigDataEcosystemProject.git
 ```
 
+To know where you can run your notebook, you can execute the following command : 
+
+```
+jupyter notebook list
+```
+
+You will get the currently running jupyter notebook session's url.
+Copy and paste it into your favourite browser.
+
+If you get trouble accessing the provided IP address, replace 0.0.0.0 with localhost.
+
 You can now run the notebook PullAndProcessing.ipynb.
