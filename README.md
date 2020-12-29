@@ -88,10 +88,14 @@ Elasticsearch should be accessible from https://localhost:9200
 Kibana should be accessible from https://localhost:5601
 3. Run the project 
 ```
-watch python run.py
+python scheduler.py
+```
+4. You can run the project in test mode (simulate the last 10 days in ~ 20 minutes instead of 10 days)
+```
+python scheduler.py --test
 ```
 
-* Linux :
+* Linux / Mac OS :
 1. Start Elasticsearch 
 ```
 ./elasticsearch
@@ -104,25 +108,12 @@ Elasticsearch should be accessible from https://localhost:9200
 Kibana should be accessible from https://localhost:5601
 3. Run the project 
 ```
-watch -n 86400 python run.py
+python scheduler.py
 ```
-
-* Mac OS :
-1. Start Elasticsearch 
+4. You can run the project in test mode (simulate the last 10 days in ~ 20 minutes instead of 10 days)
 ```
-./elasticsearch
+python scheduler.py --test
 ```
-Elasticsearch should be accessible from https://localhost:9200
-2. Start Kibana
-```
-./bin/kibana
-```
-Kibana should be accessible from https://localhost:5601
-3. Run the project 
-```
-sh watch.sh python run.py 86400
-```
-
 
 This will automatically, each day :
 * Fetch data from https://ourworldindata.org/
