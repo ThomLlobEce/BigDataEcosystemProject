@@ -5,6 +5,13 @@ from time import sleep
 from datetime import date
 import sys
 
+if len(sys.argv) > 1:
+    date = sys.argv[1]
+else:
+    date = date.today()
+
+    date = str(date.year) + "-" + str(date.month) + "-" + str(date.day-1)
+
 spark = SparkSession \
     .builder \
     .appName("Python Spark SQL basic example") \
@@ -14,14 +21,6 @@ spark = SparkSession \
 print("------------------------------------------------------Job Starting------------------------------------------------------")
 
 spark.sparkContext.addFile("https://covid.ourworldindata.org/data/owid-covid-data.csv")
-
-
-if len(sys.argv) > 1:
-    date = sys.argv[1]
-else:
-    date = date.today()
-
-    date = str(date.year) + "-" + str(date.month) + "-" + str(date.day-1)
 
 print(f"------------------------------------------------------Filtering for {date}------------------------------------------------------")
 
