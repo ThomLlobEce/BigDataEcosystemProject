@@ -7,3 +7,7 @@ myenv
 
 # Python folders
 __pycache__
+
+# Project files
+# json generated files should not be pushed to git
+*.json
