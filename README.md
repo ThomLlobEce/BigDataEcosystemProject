@@ -82,6 +82,7 @@ Once you have gathered all the dependencies, follow the next steps (depending on
 .\elasticsearch.bat
 ```
 Elasticsearch should be accessible from https://localhost:9200
+
 2. Start Kibana 
 
 ```
