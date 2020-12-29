@@ -1,9 +1,12 @@
 from datetime import date
-import os, re
+import os, re, sys
 
-date = date.today()
+if len(sys.argv) > 1:
+    date = sys.argv[1]
+else:
+    date = date.today()
 
-date = str(date.year) + "-" + str(date.month) + "-" + str(date.day-1)
+    date = str(date.year) + "-" + str(date.month) + "-" + str(date.day-1)
 
 dirs = os.listdir(f"data-{date}")
 
