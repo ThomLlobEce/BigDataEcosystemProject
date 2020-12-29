@@ -1,4 +1,4 @@
-import os, sys, json, pandas as pd
+import json
 from elasticsearch import Elasticsearch
 from datetime import date
 
@@ -41,9 +41,3 @@ query = {
         "match_all":{}
     }
 }
-
-res = es.search(index='covid_test',body=query)
-
-es.delete(index="covid_test",doc_type="country",id='vndwq3YBF9Skf3w2uitj')
-
-es.indices.delete(index="cov",ignore=[400,404])

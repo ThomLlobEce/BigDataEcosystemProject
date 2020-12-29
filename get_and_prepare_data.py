@@ -2,10 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import ceil
 from pyspark import SparkFiles
 from time import sleep
-import pandas as pd
 from datetime import date
-
-pd.set_option("display.max_columns", None)
 
 spark = SparkSession \
     .builder \

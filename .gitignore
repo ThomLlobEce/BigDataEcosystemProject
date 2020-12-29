@@ -1,0 +1,9 @@
+# The folder name of your virtual environement
+my_env
+myenv
+
+# IDE folders
+.vscode
+
+# Python folders
+__pycache__
