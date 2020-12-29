@@ -21,7 +21,7 @@ pip install virtualenv
 Create and activate a virtual environnement (replace myenv by the name of your choice)
 
 ```
-python -m venv my_env
+python -m venv myenv
 myenv\Scripts\activate
 ```
 
