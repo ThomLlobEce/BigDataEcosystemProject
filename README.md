@@ -1,45 +1,80 @@
 # BigDataEcosystemProject
 
-## To get this project running
+The projects aims to retrieve and update information about the coronavirus pandemic, in order to have a daily-updated vision on what's going on all over the world.
 
-We recommend you to use a docker to get sparks running on your computer.
+The data comes from [Our World in Data](https://ourworldindata.org/), which is open access licensed under the Creative Common BY Licence.
 
-```console
-docker run -d -p 8888:8888 jupyter/pyspark-notebook
+### Authors
+* Pablo Antoniadis (pablo.antoniadis@edu.ece.fr)
+* Thomas Llobregat (thomas.llobregat@edu.ece.fr)
+* Sébastien Ye (sebastien.ye@edu.ece.fr)
+
+# Get this project running on your machine
+
+## Create a python virtual environement
+
+If you haven't installed virtualenv yet :
+```
+pip install virtualenv
 ```
 
-Then, you need to connect to the bash of your container.
+Create and activate a virtual environnement (replace myenv by the name of your choice)
 
-To connect to the bash of your container you will need to run the following command : 
-
-```console
-docker ps -a
-----------------------------
-Container ID | Image | ...
-<container_id> | jupyter/pyspark-notebook | ....
-----------------------------
-
-docker exec -it <container_id> /bin/bash
+```
+virtualenv myenv
+myenv\Scripts\activate
 ```
 
-You are now in the bash of your jupyter/pyspark-notebook. You will need then to fetch the code from this github repository.
+## Install dependancies
 
-```console
-mkdir project/
-cd project/
-git init
-git pull https://github.com/ThomLlobEce/BigDataEcosystemProject.git
+### Python packages
+
+```
+pip install -r requirements.txt
 ```
 
-To know where you can run your notebook, you can execute the following command : 
+### Sparks
 
-```console
-jupyter notebook list
+* Windows 
+
+To get sparks on windows, you can follow this tutorial (You can skip Step 1 & 2 if you already have both java and python running on your machine) :
+https://phoenixnap.com/kb/install-spark-on-windows-10
+
+* Mac OS
+
+* Linux
+
+### ElasticSearch
+
+* Windows
+
+* Mac OS
+
+* Linux
+
+### Kibana
+
+* Windows
+
+* Mac OS
+
+* Linux
+
+
+# Run the project
+
+Once you have gathered all the dependencies, you can simply run the next command line (depending on your OS).
+* Windows : 
+```
+watch python run.py
 ```
 
-You will get the currently running jupyter notebook session's url.
-Copy and paste it into your favourite browser.
+* Linux :
 
-If you get trouble accessing the provided IP address, replace 0.0.0.0 with localhost.
+* Mac OS :
 
-You can now run the notebook PullAndProcessing.ipynb.
+This will automatically, each day :
+* Fetch data from https://ourworldindata.org/
+* Pre process the previous day data using sparks
+* Save the pre process data into a {date}.json file
+* Push the new data to elasticsearch and update all visualisations
