@@ -77,16 +77,20 @@ Once you have gathered all the dependencies, follow the next steps (depending on
 
 * Windows : 
 1. Start Elasticsearch 
+
 ```
 .\elasticsearch.bat
 ```
 Elasticsearch should be accessible from https://localhost:9200
 2. Start Kibana 
+
 ```
 .\bin\kibana.bat
 ```
 Kibana should be accessible from https://localhost:5601
+
 3. Run the project 
+
 ```
 python scheduler.py
 ```
@@ -97,21 +101,28 @@ python scheduler.py --test
 
 * Linux / Mac OS :
 1. Start Elasticsearch 
+
 ```
 ./elasticsearch
 ```
 Elasticsearch should be accessible from https://localhost:9200
+
 2. Start Kibana
+
 ```
 ./bin/kibana
 ```
 Kibana should be accessible from https://localhost:5601
+
 3. Run the project 
+
 ```
 python scheduler.py
+
 ```
 4. You can run the project in test mode (simulate the last 10 days in ~ 20 minutes instead of 10 days)
 ```
+
 python scheduler.py --test
 ```
 
