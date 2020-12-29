@@ -42,39 +42,91 @@ https://phoenixnap.com/kb/install-spark-on-windows-10
 
 * Mac OS
 
+To get sparks on mac OS, you can follow this tutorial :
+https://medium.com/beeranddiapers/installing-apache-spark-on-mac-os-ce416007d79f
+
 * Linux
+To get sparks on ubuntu, you can follow this tutorial :
+https://phoenixnap.com/kb/install-spark-on-ubuntu
 
 ### ElasticSearch
 
-* Windows
+You can get elastic search running on your computer by following the next tutorial :
 
-* Mac OS
+https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started-install.html#run-elasticsearch-local
 
-* Linux
 
 ### Kibana
 
-* Windows
+You can get kibana running on your computer by following the next tutorial :
 
-* Mac OS
+* Mac OS X :
+https://www.elastic.co/guide/en/kibana/current/targz.html#install-darwin64
 
-* Linux
+* Linux :
+https://www.elastic.co/guide/en/kibana/current/targz.html#install-linux64
+
+* Windows :
+https://www.elastic.co/guide/en/kibana/current/windows.html#install-windows
 
 
 # Run the project
 
-Once you have gathered all the dependencies, you can simply run the next command line (depending on your OS).
+Once you have gathered all the dependencies, follow the next steps (depending on your OS):
+
 * Windows : 
+1. Start Elasticsearch 
+```
+.\elasticsearch.bat
+```
+Elasticsearch should be accessible from https://localhost:9200
+2. Start Kibana 
+```
+.\bin\kibana.bat
+```
+Kibana should be accessible from https://localhost:5601
+3. Run the project 
 ```
 watch python run.py
 ```
 
 * Linux :
+1. Start Elasticsearch 
+```
+./elasticsearch
+```
+Elasticsearch should be accessible from https://localhost:9200
+2. Start Kibana
+```
+./bin/kibana
+```
+Kibana should be accessible from https://localhost:5601
+3. Run the project 
+```
+watch python run.py
+```
 
 * Mac OS :
+1. Start Elasticsearch 
+```
+./elasticsearch
+```
+Elasticsearch should be accessible from https://localhost:9200
+2. Start Kibana
+```
+./bin/kibana
+```
+Kibana should be accessible from https://localhost:5601
+3. Run the project 
+```
+watch python run.py
+```
+
 
 This will automatically, each day :
 * Fetch data from https://ourworldindata.org/
 * Pre process the previous day data using sparks
 * Save the pre process data into a {date}.json file
 * Push the new data to elasticsearch and update all visualisations
+
+Each day, you can now see new visualisations from the previous in kibana at : 
