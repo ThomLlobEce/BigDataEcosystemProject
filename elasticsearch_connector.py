@@ -1,4 +1,4 @@
-import json
+import json, sys
 from elasticsearch import Elasticsearch
 from datetime import date
 
@@ -12,9 +12,12 @@ def connect_data():
     return es
     
 
-date = date.today()
+if len(sys.argv) > 1:
+    date = sys.argv[1]
+else:
+    date = date.today()
 
-date = str(date.year) + "-" + str(date.month) + "-" + str(date.day-1)
+    date = str(date.year) + "-" + str(date.month) + "-" + str(date.day-1)
 
 data = {}
 
