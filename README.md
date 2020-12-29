@@ -120,7 +120,7 @@ Elasticsearch should be accessible from https://localhost:9200
 Kibana should be accessible from https://localhost:5601
 3. Run the project 
 ```
-watch.sh -n 86400 python run.py
+sh watch.sh python run.py 86400
 ```
 
 
