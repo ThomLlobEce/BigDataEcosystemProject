@@ -46,6 +46,7 @@ To get sparks on mac OS, you can follow this tutorial :
 https://medium.com/beeranddiapers/installing-apache-spark-on-mac-os-ce416007d79f
 
 * Linux
+
 To get sparks on ubuntu, you can follow this tutorial :
 https://phoenixnap.com/kb/install-spark-on-ubuntu
 
