@@ -104,7 +104,7 @@ Elasticsearch should be accessible from https://localhost:9200
 Kibana should be accessible from https://localhost:5601
 3. Run the project 
 ```
-watch -n 10 python run.py
+watch -n 86400 python run.py
 ```
 
 * Mac OS :
@@ -120,7 +120,7 @@ Elasticsearch should be accessible from https://localhost:9200
 Kibana should be accessible from https://localhost:5601
 3. Run the project 
 ```
-watch -n 10 python run.py
+watch.sh -n 86400 python run.py
 ```
 
 
