@@ -1,3 +1,5 @@
+![alt text](https://github.com/ThomLlobEce/BigDataEcosystemProject/blob/main/Shema.png?raw=true)
+
 # BigDataEcosystemProject
 
 The projects aims to retrieve and update information about the coronavirus pandemic, in order to have a daily-updated vision on what's going on all over the world.
