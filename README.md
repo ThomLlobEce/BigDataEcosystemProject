@@ -130,11 +130,13 @@ python scheduler.py --test
 This will automatically, each day :
 * Fetch data from https://ourworldindata.org/
 * Pre process the previous day data using sparks
-* Create and calculate new columns using sparks seach as the death rate, percentage of vaccination or the proportion of infected people in the population 
+* Create and calculate new columns using sparks such as the death rate, percentage of vaccination or the proportion of infected people in the population 
 * Save the pre process data into a {date}.json file
 * Push the new data to elasticsearch and update all visualisations
 
-5. Now that you have the project running you will have to import the dashboard on Kibana.
+# On Kibana
+
+Now that you have the project running you will have to import the dashboard on Kibana.
 
 * In Kibana in the left drawer menu go to **Stack Management** (should be at the very end) 
 * Under **Kibana** go to **Saved Objects**
