@@ -145,3 +145,8 @@ Now that you have the project running you will have to import the dashboard on K
 * Make sure that the filter date on the top right of the dashboard is set to December 20 -> now
 
 Enjoy !
+
+You should get this result : 
+
+![alt text](https://github.com/ThomLlobEce/BigDataEcosystemProject/blob/main/img.png?raw=true)
+
