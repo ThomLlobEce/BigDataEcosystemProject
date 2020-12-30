@@ -1,9 +1,19 @@
-![alt text](https://github.com/ThomLlobEce/BigDataEcosystemProject/blob/main/Schema_1.png?raw=true)
+![alt text](https://github.com/ThomLlobEce/BigDataEcosystemProject/blob/main/Schema_2.png?raw=true)
 # BigDataEcosystemProject
 
 The projects aims to retrieve and update information about the coronavirus pandemic, in order to have a daily-updated vision on what's going on all over the world.
 
 The data comes from [Our World in Data](https://ourworldindata.org/), which is open access licensed under the Creative Common BY Licence.
+
+We used Apache Sparks to process daily data that we send to Elasticsearch and its visualization dashboard tool Kibana. 
+
+* In this project you will see how we retreive the data from ourworldindata.org and process it with sparks : get_and_prepare_data.py
+* How we send it to Elasticsearch : elasticsearch_connector.py
+* how we scheduled it day by day (or minute by minute in test mode to go faster): scheduler.py
+
+The idea behind the project is to constaintly run the treatment part in order to update the data everyday, so we can have a clear vision of the evolution of covid 19 in the world and also the vaccination progression.
+
+Perspectives : create a docker image of the project and put it on a cloud service.  
 
 ### Authors
 * Pablo Antoniadis (pablo.antoniadis@edu.ece.fr)
