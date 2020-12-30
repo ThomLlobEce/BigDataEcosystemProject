@@ -9,7 +9,7 @@ We used Apache Sparks to process daily data that we send to Elasticsearch and it
 
 * In this project you will see how we retreive the data from ourworldindata.org and process it with sparks : get_and_prepare_data.py
 * How we send it to Elasticsearch : elasticsearch_connector.py
-* how we scheduled it day by day (or minute by minute in test mode to go faster): scheduler.py
+* How we scheduled it day by day (or minute by minute in test mode to go faster): scheduler.py
 
 The idea behind the project is to constaintly run the treatment part in order to update the data everyday, so we can have a clear vision of the evolution of covid 19 in the world and also the vaccination progression.
 
