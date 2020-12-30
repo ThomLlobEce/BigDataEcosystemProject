@@ -36,6 +36,12 @@ today_df = today_df.drop(*columns_to_delete)
 
 today_df = today_df.withColumn('vaccination_percentage', (today_df.total_vaccinations / today_df.population)*100)
 
+today_df = today_df.withColumn('death_rate', (today_df.total_deaths / today_df.total_cases)*100)
+
+today_df = today_df.withColumn('cases_percentage', (today_df.total_cases / today_df.population)*100)
+
+
+
 print(f"------------------------------------------------------Saving to data-{date}------------------------------------------------------")
 
 today_df.write.format("json").save(f"data-{date}")

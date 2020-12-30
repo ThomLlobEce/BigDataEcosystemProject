@@ -39,8 +39,3 @@ else:
 for el in data:
     resp = es.index(index='covid_test',doc_type='country',body = el)
 
-query = {
-    "query":{
-        "match_all":{}
-    }
-}
