@@ -1,4 +1,4 @@
-![alt text](https://github.com/ThomLlobEce/BigDataEcosystemProject/blob/main/Shema.png?raw=true)
+![alt text](https://github.com/ThomLlobEce/BigDataEcosystemProject/blob/main/Schema.png?raw=true)
 
 # BigDataEcosystemProject
 
